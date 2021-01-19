@@ -1,8 +1,6 @@
-[![Build Status](https://travis-ci.org/msva/lua-htmlparser.png?branch=master)](https://travis-ci.org/msva/lua-htmlparser)
-[![Coverage Status](https://coveralls.io/repos/msva/lua-htmlparser/badge.png?branch=master)](https://coveralls.io/r/msva/lua-htmlparser?branch=master)
-[![License](http://img.shields.io/badge/License-LGPL+-brightgreen.svg)](doc/LICENSE)
+# Open Computers Browser 
 
-# LuaRock "htmlparser"
+Open and view webpages on OpenComputers OpenOS
 
 Parse HTML text into a tree of elements with selectors
 
@@ -15,7 +13,7 @@ Htmlparser is a listed [LuaRock](http://luarocks.org/repositories/rocks/). Insta
 Htmlparser depends on [Lua 5.1-5.3](https://www.lua.org/download.html) or [LuaJIT](https://luajit.org/download.html), which provides 5.1-compatible ABI.
 To be able to run the tests, [lunitx](https://github.com/dcurrie/lunit) also comes along as a LuaRock
 
-## Usage
+## HTML Parser Usage
 Start off with
 ```lua
 local htmlparser = require("htmlparser")
