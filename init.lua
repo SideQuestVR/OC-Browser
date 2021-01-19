@@ -16,5 +16,5 @@ for key,value in pairs(folders) do
 end
 local wget = loadfile("/bin/wget.lua")
 for key,value in pairs(files) do
-    wget("-q",base_url..value,"./"..value)
+    wget("-qf",base_url..value,"./"..value)
 end
