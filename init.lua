@@ -3,7 +3,7 @@ local install_files = {
     "/browser.lua",
     "/api.lua",
     "/htmlparser.lua",
-    "/htmlparser/ElementNode.lua"
+    "/htmlparser/ElementNode.lua",
     "/htmlparser/voidelements.lua"
 }
 local base_url = "https://raw.githubusercontent.com/SideQuestVR/OC-Browser/master/";
