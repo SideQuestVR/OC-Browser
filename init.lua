@@ -3,6 +3,8 @@ local files = {
     "/browser.lua",
     "/api.lua",
     "/htmlparser.lua",
+    "/lexer.lua",
+    "/css-parser.lua",
     "/htmlparser/ElementNode.lua",
     "/htmlparser/voidelements.lua"
 }
