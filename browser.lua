@@ -1,7 +1,6 @@
 local htmlparser = require("htmlparser")
 local shell = require("shell")
 local internet = require("internet")
-local cssparser = require("css-parser")
 local args, options = shell.parse(...)
 options.h = options.h or options.help
 if #args <1 or options.h then
@@ -61,27 +60,49 @@ local elements = root:select('body')
 -- internal HTTPRequest object.
 local mt = getmetatable(handle)
 
-local parser = CssParser.new()
+function trim(s)
+    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
+end
+
+function split_str (inputstr, sep)
+    if sep == nil then
+            sep = "%s"
+    end
+    local t={}
+    for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+            table.insert(t, str)
+    end
+    return t
+end
+
+local function parseCss(styleStr)
+    local rules = split_str(styleStr,";")
+    local rulesTable = {}
+    for _, v in pairs(rules) do
+        local props = split_str(v,":")
+        rulesTable[trim(props[1])] = trim(props[2])
+    end
+    return rulesTable
+end
 
 local function renderElement(child, parent)
+    print("TagName: ", child.name)
     for _,a in pairs(child.attributes) do
-        if(_ == "style")
-
-            parser:tokenize(a)
-            for i  = 0, parser.current_source do
-              local current = parser.tokens[i] or {}
-              for k, v in ipairs(current) do
-                print(k, v.type, v.contents)
-              end
+        if _ == "style" then
+            print("Styles: ")
+            local cssRules = parseCss(a)
+            for k, v in pairs(cssRules) do
+                print("    ",k,"    ",v)
             end
+        else
+            print("Attribute: ", _, a)
         end
-        print(_,a)
     end
  --   print("", child.name)
  --   print(string.sub(child.root._text, child._openend + 1, child._closestart - 1))
 end
 local function walk(element)
-	print("", element.name)
+--	print("", element.name)
 	local children = element.nodes
 	for _,child in ipairs(children) do
 	    renderElement(child, element)
