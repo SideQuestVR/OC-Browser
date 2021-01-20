@@ -10,6 +10,7 @@ local folders = {
     "/htmlparser"
 }
 local fs = require("filesystem")
+local shell = require("shell")
 local base_url = "https://raw.githubusercontent.com/SideQuestVR/OC-Browser/master";
 for key,value in pairs(folders) do
     fs.makeDirectory(shell.getWorkingDirectory()..value)
