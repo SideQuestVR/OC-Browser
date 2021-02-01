@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="77f9a12d-1b94-4fad-aa75-eb969f080cec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser.lua" beforeDir="false" afterPath="$PROJECT_DIR$/browser.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OC-DynamicBuilding" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -40,7 +39,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611096657573</updated>
-      <workItem from="1611096660095" duration="9903000" />
+      <workItem from="1611096660095" duration="11441000" />
+      <workItem from="1611185451253" duration="5020000" />
+      <workItem from="1611526271843" duration="1197000" />
     </task>
     <servers />
   </component>
@@ -57,5 +58,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
